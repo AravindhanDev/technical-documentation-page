@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+:root {
+  --bold: #222;
+  --light: #4f5055;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  font-size: 1.8rem;
+  color: var(--bold);
+  padding: 0.5rem 0;
+}
+
+p,
+li {
+  color: var(--light);
+  margin: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+ul {
+  margin-left: 3.5rem;
+}
+
+ul li {
+  line-height: 1.5;
+}
+
+code {
+  display: block;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  margin: 0 2rem;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--light);
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 24rem;
+}
+
+.main-section {
+  margin: 1rem 0;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 20rem;
+  top: 0;
+  left: 0;
+  width: 29rem;
+  height: 100%;
+  padding: 0;
+  border-right: 3px solid rgba(0, 22, 22, 0.4);
+}
+
+#navbar header {
+  text-align: center;
+}
+
+#navbar ul {
+  width: 100%;
+  height: 94%;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+}
+
+#navbar li {
+  list-style-type: none;
+  border-top: 1px solid var(--bold);
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  padding: 1rem 0 0;
+  display: block;
+  cursor: pointer;
+  color: var(--light);
+}
+
+#navbar a:hover {
+  color: var(--bold);
+  text-align: left;
+}
+
+@media all and (max-width: 768px) {
+  #navbar header {
+    font-size: 1.4rem;
+  }
+
+  #navbar {
+    margin: 2rem 0;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #fff;
+    border: none;
+  }
+
+  #navbar ul {
+    width: 85%;
+    height: 80%;
+    border: 3px solid var(--bold);
+    margin: 0 auto;
+  }
+
+  #navbar li {
+    padding: 0;
+    margin: 0;
+    padding-left: 0.3rem;
+    padding: 0.5rem 0 0.5remrem 0.3rem;
+  }
+
+  #main-doc {
+    z-index: 1;
+    background-color: #fff;
+    margin: 0;
+    margin: 20rem 0.5rem 0 0;
+    padding: 0;
+    padding-left: 1rem;
+  }
+
+  .main-section header {
+    font-size: 1.5rem;
+  }
+
+  .main-section li,
+  .main-section p {
+    font-size: 0.9rem;
+  }
+}
